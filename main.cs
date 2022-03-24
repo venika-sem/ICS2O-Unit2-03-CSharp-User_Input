@@ -10,19 +10,19 @@ class Program
     public static void Main(string[] args)
     {
         // This function accepts user input
-        string street_name;
-        int street_number;
+        string streetName;
+        int streetNumber;
 
         Console.WriteLine("This program gets a user's address.");
         Console.WriteLine("");
 
-        Console.Write("Enter your street name: ");
-        street_name = Console.ReadLine();
         Console.Write("Enter your street number: ");
-        street_number = Convert.ToInt32(Console.ReadLine());
+        streetNumber = Convert.ToInt32(Console.ReadLine());
+        Console.Write("Enter your street name: ");
+        streetName = Console.ReadLine();
 
         Console.WriteLine("");
-        Console.WriteLine("Your address is: " + street_name + ", house " + street_number + ".");
+        Console.WriteLine("Your address is: " + streetNumber + ", " + streetName + ".");
 
         Console.WriteLine("\nDone.");
     }
